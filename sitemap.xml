@@ -3,6 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marekzhang.github.io/categories/</loc>
+    <lastmod>2020-09-26T16:50:04+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/tags/hugo/</loc>
+    <lastmod>2020-09-26T16:50:04+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://marekzhang.github.io/2020/09/hugo-pitfalls/</loc>
     <lastmod>2020-09-26T16:50:04+01:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -17,7 +31,28 @@
   </url>
   
   <url>
+    <loc>https://marekzhang.github.io/categories/other/</loc>
+    <lastmod>2020-09-26T16:50:04+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/tags/pitfalls/</loc>
+    <lastmod>2020-09-26T16:50:04+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://marekzhang.github.io/posts/</loc>
+    <lastmod>2020-09-26T16:50:04+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/tags/</loc>
     <lastmod>2020-09-26T16:50:04+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -31,19 +66,7 @@
   </url>
   
   <url>
-    <loc>https://marekzhang.github.io/categories/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://marekzhang.github.io/series/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
