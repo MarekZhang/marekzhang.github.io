@@ -21,6 +21,15 @@ baseURL: https://xxxx.github.io/  </description>
     </item>
     
     <item>
+      <title>Redis distributed lock</title>
+      <link>https://marekzhang.github.io/2020/09/redis-distributed-lock/</link>
+      <pubDate>Sat, 26 Sep 2020 16:50:04 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/redis-distributed-lock/</guid>
+      <description>Description 对于High Concurrency 的场景通常要考虑线程抢夺资源的问题。比如电商SecKill活动通常容易出现的超卖现象。比如下面这段代码当有多个线程共享了库存</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://marekzhang.github.io/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
