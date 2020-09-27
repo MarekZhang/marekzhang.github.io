@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>WebSocket in Spring Boot</title>
+      <link>https://marekzhang.github.io/2020/09/websocket-spring-boot/</link>
+      <pubDate>Sun, 27 Sep 2020 16:01:12 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/websocket-spring-boot/</guid>
+      <description>Description 我在搭建Online-Food-Ordering-System这个项目时，当用户在微信小程序上下单的时候，商家的后台系统要能够第一时间收到</description>
+    </item>
+    
+    <item>
       <title>Hugo Pitfall</title>
       <link>https://marekzhang.github.io/2020/09/hugo-pitfalls/</link>
       <pubDate>Sat, 26 Sep 2020 16:50:04 +0100</pubDate>

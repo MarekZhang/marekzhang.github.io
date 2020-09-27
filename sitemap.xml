@@ -4,7 +4,63 @@
   
   <url>
     <loc>https://marekzhang.github.io/categories/</loc>
-    <lastmod>2020-09-26T16:50:04+01:00</lastmod>
+    <lastmod>2020-09-27T16:01:12+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/tags/java/</loc>
+    <lastmod>2020-09-27T16:01:12+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/</loc>
+    <lastmod>2020-09-27T16:01:12+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/posts/</loc>
+    <lastmod>2020-09-27T16:01:12+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/tags/spring-boot/</loc>
+    <lastmod>2020-09-27T16:01:12+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/categories/spring-boot/</loc>
+    <lastmod>2020-09-27T16:01:12+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/tags/</loc>
+    <lastmod>2020-09-27T16:01:12+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/tags/websocket/</loc>
+    <lastmod>2020-09-27T16:01:12+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/2020/09/websocket-spring-boot/</loc>
+    <lastmod>2020-09-27T16:01:12+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,20 +80,6 @@
   </url>
   
   <url>
-    <loc>https://marekzhang.github.io/tags/java/</loc>
-    <lastmod>2020-09-26T16:50:04+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/</loc>
-    <lastmod>2020-09-26T16:50:04+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://marekzhang.github.io/categories/other/</loc>
     <lastmod>2020-09-26T16:50:04+01:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -46,13 +88,6 @@
   
   <url>
     <loc>https://marekzhang.github.io/tags/pitfalls/</loc>
-    <lastmod>2020-09-26T16:50:04+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/posts/</loc>
     <lastmod>2020-09-26T16:50:04+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -74,20 +109,6 @@
   
   <url>
     <loc>https://marekzhang.github.io/2020/09/redis-distributed-lock/</loc>
-    <lastmod>2020-09-26T16:50:04+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/tags/spring-boot/</loc>
-    <lastmod>2020-09-26T16:50:04+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/tags/</loc>
     <lastmod>2020-09-26T16:50:04+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
