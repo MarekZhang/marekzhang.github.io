@@ -10,6 +10,24 @@
     
     
     <item>
+      <title>Java Generics</title>
+      <link>https://marekzhang.github.io/2020/09/java-generics/</link>
+      <pubDate>Tue, 29 Sep 2020 11:39:49 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/java-generics/</guid>
+      <description>Generic Method 如果可以使用泛型方法来替代整个类的泛型化就应该使用泛型方法 static方法无法访问泛型类的类型参数，所有static方法需要使用泛型能力</description>
+    </item>
+    
+    <item>
+      <title>ArrayList Source Code</title>
+      <link>https://marekzhang.github.io/2020/09/arraylist/</link>
+      <pubDate>Tue, 29 Sep 2020 11:09:09 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/arraylist/</guid>
+      <description>ArrayList public E remove(int index) public E remove(int index) { rangeCheck(index); modCount++; E oldValue = elementData(index); int numMoved = size - index - 1; if (numMoved &amp;gt; 0) System.arraycopy(elementData, index+1, elementData, index, numMoved); elementData[--size] = null; // clear to let GC do its work return oldValue; } remove 移除index位置的元素: 首先计算index</description>
+    </item>
+    
+    <item>
       <title>WebSocket in Spring Boot</title>
       <link>https://marekzhang.github.io/2020/09/websocket-spring-boot/</link>
       <pubDate>Sun, 27 Sep 2020 16:01:12 +0100</pubDate>
