@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Leetcode 92. Reverse Linked List II</title>
+      <link>https://marekzhang.github.io/2020/09/reverse-linked-list-ii/</link>
+      <pubDate>Tue, 29 Sep 2020 17:03:30 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/reverse-linked-list-ii/</guid>
+      <description>Description 92. Reverse Linked List II Reverse a linked list from position m to n. Do it in one-pass. Note: 1 ≤ m ≤ n ≤ length of list. Example: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL, m = 2, n = 4Output: 1-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;5-&amp;gt;NULL Solution 需要使用DummyHead，因为反转的起始点可能是第一个元素</description>
+    </item>
+    
+    <item>
       <title>Java Generics</title>
       <link>https://marekzhang.github.io/2020/09/java-generics/</link>
       <pubDate>Tue, 29 Sep 2020 11:39:49 +0100</pubDate>
