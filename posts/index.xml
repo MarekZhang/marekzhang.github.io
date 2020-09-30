@@ -5,10 +5,19 @@
     <link>https://marekzhang.github.io/posts/</link>
     <description>Recent content in Posts on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Sep 2020 17:03:30 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2020 22:08:01 +0100</lastBuildDate>
     
         <atom:link href="https://marekzhang.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leetcode 142 Linked List Cycle II</title>
+      <link>https://marekzhang.github.io/2020/09/linked-list-cycle-ii/</link>
+      <pubDate>Wed, 30 Sep 2020 22:08:01 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/linked-list-cycle-ii/</guid>
+      <description>Description 142. Linked List Cycle II Given a linked list, return the node where the cycle begins. If there is no cycle, return null. There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail&amp;rsquo;s next pointer is connected to. Note</description>
+    </item>
     
     <item>
       <title>Leetcode 92. Reverse Linked List II</title>
