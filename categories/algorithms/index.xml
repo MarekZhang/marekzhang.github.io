@@ -5,10 +5,19 @@
     <link>https://marekzhang.github.io/categories/algorithms/</link>
     <description>Recent content in Algorithms on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Sep 2020 22:08:01 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2020 23:12:22 +0100</lastBuildDate>
     
         <atom:link href="https://marekzhang.github.io/categories/algorithms/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leetcode 138 Copy List with Random Pointer</title>
+      <link>https://marekzhang.github.io/2020/09/138.-copy-list-with-random-pointer/</link>
+      <pubDate>Wed, 30 Sep 2020 23:12:22 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/138.-copy-list-with-random-pointer/</guid>
+      <description>Description 138. Copy List with Random Pointer A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null. Return a deep copy of the list. The Linked List is represented in the input/output as a list of n nodes. Each node is represented as a pair of [val, random_index] where: val: an integer representing Node.val random_index:</description>
+    </item>
     
     <item>
       <title>Leetcode 142 Linked List Cycle II</title>

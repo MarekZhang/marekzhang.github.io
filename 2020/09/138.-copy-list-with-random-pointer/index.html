@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <title>
-        Mark&#39;s Blog</title>
+        Leetcode 138 Copy List with Random Pointer - Mark&#39;s Blog
+      </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -19,25 +20,32 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    
+    <meta name="description" content="Description 138. Copy List with Random Pointer A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null. Return a deep copy of the list. The Linked List is represented in the input/output as a list of n nodes. Each node is represented as a pair of [val, random_index] where: val: an integer representing Node.val random_index:" />
     <meta name="generator" content="Hugo 0.73.0 with theme pure" />
-    <title>Mark&#39;s Blog</title>
+    <title>Leetcode 138 Copy List with Random Pointer - Mark&#39;s Blog</title>
     
-    <link rel="alternate" type="application/rss+xml" href="https://marekzhang.github.io/tags/reading-source-code/index.xml" title="Mark's Blog" />
     
     <link rel="stylesheet" href="https://marekzhang.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="Reading Source Code" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://marekzhang.github.io/tags/reading-source-code/" />
-<meta property="og:updated_time" content="2020-09-29T11:09:09+01:00" />
-<meta itemprop="name" content="Reading Source Code">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Reading Source Code"/>
-<meta name="twitter:description" content=""/>
+    <meta property="og:title" content="Leetcode 138 Copy List with Random Pointer" />
+<meta property="og:description" content="Description 138. Copy List with Random Pointer A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null. Return a deep copy of the list. The Linked List is represented in the input/output as a list of n nodes. Each node is represented as a pair of [val, random_index] where: val: an integer representing Node.val random_index:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marekzhang.github.io/2020/09/138.-copy-list-with-random-pointer/" />
+<meta property="article:published_time" content="2020-09-30T23:12:22+01:00" />
+<meta property="article:modified_time" content="2020-09-30T23:12:22+01:00" />
+<meta itemprop="name" content="Leetcode 138 Copy List with Random Pointer">
+<meta itemprop="description" content="Description 138. Copy List with Random Pointer A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null. Return a deep copy of the list. The Linked List is represented in the input/output as a list of n nodes. Each node is represented as a pair of [val, random_index] where: val: an integer representing Node.val random_index:">
+<meta itemprop="datePublished" content="2020-09-30T23:12:22&#43;01:00" />
+<meta itemprop="dateModified" content="2020-09-30T23:12:22&#43;01:00" />
+<meta itemprop="wordCount" content="362">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Leetcode 138 Copy List with Random Pointer"/>
+<meta name="twitter:description" content="Description 138. Copy List with Random Pointer A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null. Return a deep copy of the list. The Linked List is represented in the input/output as a list of n nodes. Each node is represented as a pair of [val, random_index] where: val: an integer representing Node.val random_index:"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -256,43 +264,150 @@
 
     
     
-<main class="main" role="main">
-    <article class="content article article-tags post-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">Reading Source Code</h1>
-            <p class="text-muted hidden-xs">Total 7 tags</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://marekzhang.github.io/tags">All</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/hugo/">Hugo</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/java/">Java</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/pitfalls/">Pitfalls</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/reading-source-code/">Reading Source Code</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/redis/">Redis</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/spring-boot/">Spring Boot</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/websocket/">WebSocket</a></li>
-                </ul>
-            </nav>
-        </header>
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/09/138.-copy-list-with-random-pointer/"
+    >Leetcode 138 Copy List with Random Pointer</a
+  >
+</h1>
+
+      <div class="article-meta">
         
-        <div class="article-body">
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-09-29 11:09:09 &#43;0100 IST"
-                itemprop="datePublished">2020-09-29</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://marekzhang.github.io/2020/09/arraylist/">ArrayList Source Code</a>
-        </h3>
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://marekzhang.github.io/2020/09/138.-copy-list-with-random-pointer/" class="article-date">
+  <time datetime="2020-09-30 23:12:22 &#43;0100 IST" itemprop="datePublished">2020-09-30</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algorithms/"> Algorithms </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/09/138.-copy-list-with-random-pointer/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 362words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
+      </div>
     </div>
-    <div class="panel-footer">
-        <a href="https://marekzhang.github.io/tags/reading-source-code" class="label label-default mb">Reading Source Code</a>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="description">Description</h2>
+<blockquote>
+<p><strong>138. Copy List with Random Pointer</strong></p>
+<p>A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.</p>
+<p>Return a deep copy of the list.</p>
+<p>The Linked List is represented in the input/output as a list of n nodes. Each node is represented as a pair of [val, random_index] where:</p>
+<p>val: an integer representing Node.val</p>
+<p>random_index: the index of the node (range from 0 to n-1) where random pointer points to, or null if it does not point to any node.
+<img src="/images/Leetcode-138.png" alt=""></p>
+</blockquote>
+<h2 id="solution">Solution</h2>
+<ol>
+<li>Deep copy 不能简单遍历原linkedlist, 对next和random所指向的node进行new Node(node.val)操作，要考虑不同地址的node有可能具有相同的val值</li>
+<li>使用HashMap，遍历原LinkedList, 列表中每一个结点做为key以当前遍历结点的val值创建与之对应的新结点并存为value</li>
+<li>重新遍历原LinkedList,并从Map中取出简直对来进行next和random指针对赋值操作</li>
+</ol>
+<pre><code class="language-java">    class Solution {
+        public Node copyRandomList(Node head) {
+            if(head == null)
+                return null;
+
+            Map&lt;Node, Node&gt; map = new HashMap&lt;&gt;();
+            Node cur = head;
+            while(cur != null){
+                map.put(cur, new Node(cur.val));
+                cur = cur.next;
+            }
+
+            Node dummyHead = new Node(-1);
+            Node curCopy = dummyHead;
+            cur = head;
+            while(cur != null){
+                curCopy.next = map.get(cur);
+                curCopy.next.random = map.get(cur.random);
+                cur = cur.next;
+                curCopy = curCopy.next;
+            }
+
+            return dummyHead.next;
+        }
+    }
+</code></pre>
+
     </div>
-</article>
-            </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="https://marekzhang.github.io/2020/09/138.-copy-list-with-random-pointer/" title="Leetcode 138 Copy List with Random Pointer" target="_blank" rel="external">https://marekzhang.github.io/2020/09/138.-copy-list-with-random-pointer/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/MarekZhang" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://marekzhang.github.io/shanyi.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/MarekZhang" target="_blank"><span class="text-dark">Mark Zhang</span><small class="ml-1x">Software Engineer</small></a></h3>
+        <div>Hi there ~</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://marekzhang.github.io/2020/09/linked-list-cycle-ii/" title="Leetcode 142 Linked List Cycle II"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="wechat,facebook,twitter"
+                data-mobile-sites="wechat,facebook,twitter"></div>
         </div>
-    </article>
+    </div>
+</nav>
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://www.facebook.com/mark.zhang.1650/" target="_blank" title="facebook" data-toggle=tooltip data-placement=top >
@@ -368,6 +483,7 @@
         hasInnerContainers: true,
     });
 </script>
+
 
   </body>
 </html>
