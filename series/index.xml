@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Bitwise operations</title>
+      <link>https://marekzhang.github.io/2020/10/bitwise/</link>
+      <pubDate>Thu, 01 Oct 2020 11:47:14 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/10/bitwise/</guid>
+      <description>Bitwise operations | OR &amp;amp; AND ^ XOR ~ Bitwise Complement: it makes every 0 to 1, and every 1 to 0. right shift &amp;gt;&amp;gt; left shift &amp;lt;&amp;lt; e.g. x = 00111011; x &amp;gt;&amp;gt; 2; x = 00001110 -n = ~n + 1 Common use a^b^b = a 0^a = a^0 = a a^a = 0 N&amp;amp;(-N) merely keeps the rightmost 1 bit (equals N &amp;amp; (~N + 1)) N&amp;amp;(N</description>
+    </item>
+    
+    <item>
       <title>Leetcode 138 Copy List with Random Pointer</title>
       <link>https://marekzhang.github.io/2020/09/138.-copy-list-with-random-pointer/</link>
       <pubDate>Wed, 30 Sep 2020 23:12:22 +0100</pubDate>
