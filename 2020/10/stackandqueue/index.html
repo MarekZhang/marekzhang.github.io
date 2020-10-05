@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <title>
-        Mark&#39;s Blog</title>
+        Stacks and Queues - Mark&#39;s Blog
+      </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -19,25 +20,32 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    
+    <meta name="description" content="Java split() str.split(String regx, int limit) 最多匹配limit-1次，返回的是以regx结尾的substring刨除regx部分，最多匹配limit-1次。如果limit是" />
     <meta name="generator" content="Hugo 0.73.0 with theme pure" />
-    <title>Mark&#39;s Blog</title>
+    <title>Stacks and Queues - Mark&#39;s Blog</title>
     
-    <link rel="alternate" type="application/rss+xml" href="https://marekzhang.github.io/tags/reading-source-code/index.xml" title="Mark's Blog" />
     
     <link rel="stylesheet" href="https://marekzhang.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="Reading Source Code" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://marekzhang.github.io/tags/reading-source-code/" />
-<meta property="og:updated_time" content="2020-09-29T11:09:09+01:00" />
-<meta itemprop="name" content="Reading Source Code">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Reading Source Code"/>
-<meta name="twitter:description" content=""/>
+    <meta property="og:title" content="Stacks and Queues" />
+<meta property="og:description" content="Java split() str.split(String regx, int limit) 最多匹配limit-1次，返回的是以regx结尾的substring刨除regx部分，最多匹配limit-1次。如果limit是" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marekzhang.github.io/2020/10/stackandqueue/" />
+<meta property="article:published_time" content="2020-10-04T21:43:50+01:00" />
+<meta property="article:modified_time" content="2020-10-04T21:43:50+01:00" />
+<meta itemprop="name" content="Stacks and Queues">
+<meta itemprop="description" content="Java split() str.split(String regx, int limit) 最多匹配limit-1次，返回的是以regx结尾的substring刨除regx部分，最多匹配limit-1次。如果limit是">
+<meta itemprop="datePublished" content="2020-10-04T21:43:50&#43;01:00" />
+<meta itemprop="dateModified" content="2020-10-04T21:43:50&#43;01:00" />
+<meta itemprop="wordCount" content="581">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Stacks and Queues"/>
+<meta name="twitter:description" content="Java split() str.split(String regx, int limit) 最多匹配limit-1次，返回的是以regx结尾的substring刨除regx部分，最多匹配limit-1次。如果limit是"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -256,43 +264,189 @@
 
     
     
-<main class="main" role="main">
-    <article class="content article article-tags post-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">Reading Source Code</h1>
-            <p class="text-muted hidden-xs">Total 7 tags</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://marekzhang.github.io/tags">All</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/hugo/">Hugo</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/java/">Java</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/pitfalls/">Pitfalls</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/reading-source-code/">Reading Source Code</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/redis/">Redis</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/spring-boot/">Spring Boot</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/websocket/">WebSocket</a></li>
-                </ul>
-            </nav>
-        </header>
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/10/stackandqueue/"
+    >Stacks and Queues</a
+  >
+</h1>
+
+      <div class="article-meta">
         
-        <div class="article-body">
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-09-29 11:09:09 &#43;0100 IST"
-                itemprop="datePublished">2020-09-29</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://marekzhang.github.io/2020/09/arraylist/">ArrayList Source Code</a>
-        </h3>
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://marekzhang.github.io/2020/10/stackandqueue/" class="article-date">
+  <time datetime="2020-10-04 21:43:50 &#43;0100 IST" itemprop="datePublished">2020-10-04</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algorithms/"> Algorithms </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/10/stackandqueue/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 581words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
+      </div>
     </div>
-    <div class="panel-footer">
-        <a href="https://marekzhang.github.io/tags/reading-source-code" class="label label-default mb">Reading Source Code</a>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="java-split">Java split()</h2>
+<ul>
+<li>str.split(String regx, int limit)
+<blockquote>
+<p>最多匹配limit-1次，返回的是以regx结尾的substring刨除regx部分，最多匹配limit-1次。如果limit是负数则匹配unlimited次。如果limit为0 则与str.split(String regx)相同，会去掉末尾的空字符串。
+The array returned by this method contains each substring of this string that is <em><strong>terminated by another substring that matches the given expression</strong></em> or is <em><strong>terminated by the end of the string</strong></em>. The substrings in the array are in the order in which they occur in this string. If the expression does not match any part of the input then the resulting array has just one element, namely this string.
+<em><strong>If n is zero then the pattern will be applied as many times as possible, the array can have any length, and trailing empty strings will be discarded.</strong></em></p>
+</blockquote>
+</li>
+<li>str.split(String regx)</li>
+</ul>
+<h2 id="java-stringbuilder-insertint-offset-char-c">Java StringBuilder insert(int offset, char c)</h2>
+<pre><code class="language-java">    String s = &quot;abcdef&quot;;
+    char[] chars = s.toCharArray();
+    StringBuilder sb = new StringBuilder();
+    for (char aChar : chars) {
+      //将字符插入到sb idx为0的位置
+      sb.insert(0,aChar);
+    }
+
+    //outcome  fedcba
+</code></pre>
+<h3 id="leetcode-394-decode-string">Leetcode 394. Decode String</h3>
+<blockquote>
+<p>Given an encoded string, return its decoded string.</p>
+<p>The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. Note that k is guaranteed to be a positive integer.</p>
+<p>You may assume that the input string is always valid; No extra white spaces, square brackets are well-formed, etc.</p>
+<p>Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, k. For example, there won&rsquo;t be input like 3a or 2[4].</p>
+<p>Example 1: Input: s = &ldquo;3[a]2[bc]&rdquo; Output: &ldquo;aaabcbc&rdquo;</p>
+<p>Example 2:</p>
+<p>Input: s = &ldquo;3[a2[c]]&rdquo; Output: &ldquo;accaccacc&rdquo;</p>
+<p>Example 3:</p>
+<p>Input: s = &ldquo;2[abc]3[cd]ef&rdquo; Output: &ldquo;abcabccdcdcdef&rdquo;</p>
+<p>Example 4:</p>
+<p>Input: s = &ldquo;abc3[cd]xyz&rdquo; Output: &ldquo;abccdcdcdxyz&rdquo;</p>
+</blockquote>
+<ul>
+<li>Solution
+<ol>
+<li>同 <a href="https://leetcode.com/problems/simplify-path/">leetcode 71. Simplify Path</a> 可以直到遇到‘[’再进行decoding，其他情况向stack中填入值</li>
+<li>注意取出k值时有可能stack为空，要确认!empty()的情况下再进行取值操作</li>
+</ol>
+</li>
+</ul>
+<pre><code class="language-java">class Solution {
+    public String decodeString(String s) {
+        Stack&lt;Character&gt; stack = new Stack&lt;&gt;();
+        for(int i = 0; i &lt; s.length(); i++){
+            if(s.charAt(i) == ']'){
+                //decoding
+                List&lt;Character&gt; list = new ArrayList&lt;&gt;();
+                while(stack.peek()!='[')
+                    list.add(0, stack.pop());
+                //remove '['
+                stack.pop();
+                int k = 0;
+                int base = 1;
+                while(!stack.isEmpty() &amp;&amp; Character.isDigit(stack.peek())){
+                    k = (stack.pop() - '0') * base + k;
+                    base *= 10;
+                }
+
+                while(k &gt; 0){
+                    for(Character c : list)
+                        stack.push(c);
+                    k--;
+                }
+            }else{
+                stack.push(s.charAt(i));
+            }
+        }
+
+        char[] charArr = new char[stack.size()];
+        for(int i = charArr.length - 1; i &gt;= 0; i--)
+            charArr[i] = stack.pop();
+        
+        return new String(charArr);
+    }
+}
+
+</code></pre>
+
     </div>
-</article>
-            </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="https://marekzhang.github.io/2020/10/stackandqueue/" title="Stacks and Queues" target="_blank" rel="external">https://marekzhang.github.io/2020/10/stackandqueue/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/MarekZhang" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://marekzhang.github.io/shanyi.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/MarekZhang" target="_blank"><span class="text-dark">Mark Zhang</span><small class="ml-1x">Software Engineer</small></a></h3>
+        <div>Hi there ~</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://marekzhang.github.io/2020/10/bitwise/" title="Bitwise operations"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="wechat,facebook,twitter"
+                data-mobile-sites="wechat,facebook,twitter"></div>
         </div>
-    </article>
+    </div>
+</nav>
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://www.facebook.com/mark.zhang.1650/" target="_blank" title="facebook" data-toggle=tooltip data-placement=top >
@@ -368,6 +522,7 @@
         hasInnerContainers: true,
     });
 </script>
+
 
   </body>
 </html>

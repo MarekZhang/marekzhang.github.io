@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Stacks and Queues</title>
+      <link>https://marekzhang.github.io/2020/10/stackandqueue/</link>
+      <pubDate>Sun, 04 Oct 2020 21:43:50 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/10/stackandqueue/</guid>
+      <description>Java split() str.split(String regx, int limit) 最多匹配limit-1次，返回的是以regx结尾的substring刨除regx部分，最多匹配limit-1次。如果limit是</description>
+    </item>
+    
+    <item>
       <title>Bitwise operations</title>
       <link>https://marekzhang.github.io/2020/10/bitwise/</link>
       <pubDate>Thu, 01 Oct 2020 11:47:14 +0100</pubDate>
