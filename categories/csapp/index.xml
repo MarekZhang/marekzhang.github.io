@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>csapp on Mark&#39;s Blog</title>
+    <link>https://marekzhang.github.io/categories/csapp/</link>
+    <description>Recent content in csapp on Mark&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 06 Oct 2020 13:58:04 +0100</lastBuildDate>
+    
+        <atom:link href="https://marekzhang.github.io/categories/csapp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IEEE 745 Floating-Point representation</title>
+      <link>https://marekzhang.github.io/2020/10/float-number/</link>
+      <pubDate>Tue, 06 Oct 2020 13:58:04 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/10/float-number/</guid>
+      <description>IEEE 745 在IEEE745统一浮点数表示方法之前，不同的计算机采用了不同的浮点数表示方法。 Floating-Point representation The IEEE floating-point standard represents a number in a form $V = (−1)^s × M × 2^E$ 如图s为</description>
+    </item>
+    
+    <item>
+      <title>Stacks and Queues</title>
+      <link>https://marekzhang.github.io/2020/10/stackandqueue/</link>
+      <pubDate>Sun, 04 Oct 2020 21:43:50 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/10/stackandqueue/</guid>
+      <description>Java split() str.split(String regx, int limit) 最多匹配limit-1次，返回的是以regx结尾的substring刨除regx部分，最多匹配limit-1次。如果limit是</description>
+    </item>
+    
+    <item>
+      <title>Bitwise operations</title>
+      <link>https://marekzhang.github.io/2020/10/bitwise/</link>
+      <pubDate>Thu, 01 Oct 2020 11:47:14 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/10/bitwise/</guid>
+      <description>Bitwise operations | OR &amp;amp; AND ^ XOR ~ Bitwise Complement: it makes every 0 to 1, and every 1 to 0. right shift &amp;gt;&amp;gt; left shift &amp;lt;&amp;lt; e.g. x = 00111011; x &amp;gt;&amp;gt; 2; x = 00001110 -n = ~n + 1 Common use a^b^b = a 0^a = a^0 = a a^a = 0 N&amp;amp;(-N) merely keeps the rightmost 1 bit (equals N &amp;amp; (~N + 1)) N&amp;amp;(N</description>
+    </item>
+    
+    <item>
+      <title>Leetcode 138 Copy List with Random Pointer</title>
+      <link>https://marekzhang.github.io/2020/09/138.-copy-list-with-random-pointer/</link>
+      <pubDate>Wed, 30 Sep 2020 23:12:22 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/138.-copy-list-with-random-pointer/</guid>
+      <description>Description 138. Copy List with Random Pointer A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null. Return a deep copy of the list. The Linked List is represented in the input/output as a list of n nodes. Each node is represented as a pair of [val, random_index] where: val: an integer representing Node.val random_index:</description>
+    </item>
+    
+    <item>
+      <title>Leetcode 142 Linked List Cycle II</title>
+      <link>https://marekzhang.github.io/2020/09/linked-list-cycle-ii/</link>
+      <pubDate>Wed, 30 Sep 2020 22:08:01 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/linked-list-cycle-ii/</guid>
+      <description>Description 142. Linked List Cycle II Given a linked list, return the node where the cycle begins. If there is no cycle, return null. There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail&amp;rsquo;s next pointer is connected to. Note</description>
+    </item>
+    
+    <item>
+      <title>Leetcode 92. Reverse Linked List II</title>
+      <link>https://marekzhang.github.io/2020/09/reverse-linked-list-ii/</link>
+      <pubDate>Tue, 29 Sep 2020 17:03:30 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/reverse-linked-list-ii/</guid>
+      <description>Description 92. Reverse Linked List II Reverse a linked list from position m to n. Do it in one-pass. Note: 1 ≤ m ≤ n ≤ length of list. Example: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL, m = 2, n = 4Output: 1-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;5-&amp;gt;NULL Solution 需要使用DummyHead，因为反转的起始点可能是第一个元素</description>
+    </item>
+    
+    <item>
+      <title>Java Generics</title>
+      <link>https://marekzhang.github.io/2020/09/java-generics/</link>
+      <pubDate>Tue, 29 Sep 2020 11:39:49 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/java-generics/</guid>
+      <description>Generic Method 如果可以使用泛型方法来替代整个类的泛型化就应该使用泛型方法 static方法无法访问泛型类的类型参数，所有static方法需要使用泛型能力</description>
+    </item>
+    
+    <item>
+      <title>ArrayList Source Code</title>
+      <link>https://marekzhang.github.io/2020/09/arraylist/</link>
+      <pubDate>Tue, 29 Sep 2020 11:09:09 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/arraylist/</guid>
+      <description>ArrayList public E remove(int index) public E remove(int index) { rangeCheck(index); modCount++; E oldValue = elementData(index); int numMoved = size - index - 1; if (numMoved &amp;gt; 0) System.arraycopy(elementData, index+1, elementData, index, numMoved); elementData[--size] = null; // clear to let GC do its work return oldValue; } remove 移除index位置的元素: 首先计算index</description>
+    </item>
+    
+    <item>
+      <title>WebSocket in Spring Boot</title>
+      <link>https://marekzhang.github.io/2020/09/websocket-spring-boot/</link>
+      <pubDate>Sun, 27 Sep 2020 16:01:12 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/websocket-spring-boot/</guid>
+      <description>Description 我在搭建Online-Food-Ordering-System这个项目时，当用户在微信小程序上下单的时候，商家的后台系统要能够第一时间收到</description>
+    </item>
+    
+    <item>
+      <title>Hugo Pitfall</title>
+      <link>https://marekzhang.github.io/2020/09/hugo-pitfalls/</link>
+      <pubDate>Sat, 26 Sep 2020 16:50:04 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/hugo-pitfalls/</guid>
+      <description>Setting config baseurl should be set with https:// not http:// And the url should point to your blog site without the github link. e.g.
+baseURL: https://xxxx.github.io/  </description>
+    </item>
+    
+    <item>
+      <title>Redis distributed lock</title>
+      <link>https://marekzhang.github.io/2020/09/redis-distributed-lock/</link>
+      <pubDate>Sat, 26 Sep 2020 16:50:04 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/09/redis-distributed-lock/</guid>
+      <description>Description 对于High Concurrency 的场景通常要考虑线程抢夺资源的问题。比如电商SecKill活动通常容易出现的超卖现象。比如下面这段代码当有多个线程共享了库存</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://marekzhang.github.io/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marekzhang.github.io/about/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hugo makes use of a variety of open source projects including:
+ https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
