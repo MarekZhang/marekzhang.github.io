@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>CSAPP Data Lab</title>
+      <link>https://marekzhang.github.io/2020/10/datalab/</link>
+      <pubDate>Tue, 06 Oct 2020 13:58:04 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/10/datalab/</guid>
+      <description>CSAPP Data Lab Solution less or euqal than isLessOrEqual - if x &amp;lt;= y then return 1, else return 0 Example: isLessOrEqual(4,5) = 1. Legal ops: ! ~ &amp;amp; ^ | + &amp;laquo; &amp;raquo; Max ops: 24 Rating: 3 判断一个数是否less or equal than 另一个数可以使用 -x + y 判断结果的符</description>
+    </item>
+    
+    <item>
       <title>IEEE 745 Floating-Point representation</title>
       <link>https://marekzhang.github.io/2020/10/float-number/</link>
       <pubDate>Tue, 06 Oct 2020 13:58:04 +0100</pubDate>
