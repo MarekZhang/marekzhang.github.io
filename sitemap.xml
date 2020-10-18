@@ -3,8 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marekzhang.github.io/tags/algorithm/</loc>
+    <lastmod>2020-10-18T20:12:35+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/categories/algorithms/</loc>
+    <lastmod>2020-10-18T20:12:35+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://marekzhang.github.io/categories/</loc>
-    <lastmod>2020-10-06T13:58:04+01:00</lastmod>
+    <lastmod>2020-10-18T20:12:35+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/2020/10/33.-search-in-rotated-sorted-array/</loc>
+    <lastmod>2020-10-18T20:12:35+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/tags/linkedlist/</loc>
+    <lastmod>2020-10-18T20:12:35+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/</loc>
+    <lastmod>2020-10-18T20:12:35+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/posts/</loc>
+    <lastmod>2020-10-18T20:12:35+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/tags/</loc>
+    <lastmod>2020-10-18T20:12:35+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -33,41 +82,6 @@
   <url>
     <loc>https://marekzhang.github.io/2020/10/float-number/</loc>
     <lastmod>2020-10-06T13:58:04+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/</loc>
-    <lastmod>2020-10-06T13:58:04+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/posts/</loc>
-    <lastmod>2020-10-06T13:58:04+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/tags/</loc>
-    <lastmod>2020-10-06T13:58:04+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/tags/algorithm/</loc>
-    <lastmod>2020-10-04T21:43:50+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/categories/algorithms/</loc>
-    <lastmod>2020-10-04T21:43:50+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -116,13 +130,6 @@
   
   <url>
     <loc>https://marekzhang.github.io/2020/09/138.-copy-list-with-random-pointer/</loc>
-    <lastmod>2020-09-30T23:12:22+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/tags/linkedlist/</loc>
     <lastmod>2020-09-30T23:12:22+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
