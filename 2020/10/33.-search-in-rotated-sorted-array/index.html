@@ -39,7 +39,7 @@
 <meta itemprop="description" content="33.Search in Rotated Sorted Array You are given an integer array nums sorted in ascending order, and an integer target. Suppose that nums is rotated at some pivot unknown to you beforehand (i.e., [0,1,2,4,5,6,7] might become [4,5,6,7,0,1,2]). If target is found in the array return its index, otherwise, return -1. Example 1: Input: nums = [4,5,6,7,0,1,2], target = 0 Output: 4 Example 2: Input: nums = [4,5,6,7,0,1,2], target = 3">
 <meta itemprop="datePublished" content="2020-10-18T20:12:35&#43;01:00" />
 <meta itemprop="dateModified" content="2020-10-18T20:12:35&#43;01:00" />
-<meta itemprop="wordCount" content="723">
+<meta itemprop="wordCount" content="1153">
 
 
 
@@ -334,8 +334,8 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/10/33.-search-in-rotated-sorted-array/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 723words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1153words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
@@ -448,6 +448,59 @@ nums is guranteed to be rotated at some pivot.
         return -1;
     }
   }
+</code></pre>
+<h2 id="follow-up">follow up</h2>
+<p>81.Search in Rotated Sorted Array II
+Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.</p>
+<p>(i.e., [0,0,1,2,2,5,6] might become [2,5,6,0,0,1,2]).</p>
+<p>You are given a target value to search. If found in the array return true, otherwise return false.</p>
+<p>Example 1:</p>
+<p>Input: nums = [2,5,6,0,0,1,2], target = 0
+Output: true
+Example 2:</p>
+<p>Input: nums = [2,5,6,0,0,1,2], target = 3
+Output: false
+Follow up:</p>
+<p>This is a follow up problem to Search in Rotated Sorted Array, where nums may contain duplicates.
+Would this affect the run-time complexity? How and why?</p>
+<ul>
+<li><a href="https://github.com/MarekZhang/Leetcode-My-Solutions/tree/master/33.%20Search%20in%20Rotated%20Sorted%20Array/src">33. Search in Rotated Sorted Array</a> follow up</li>
+<li>因为有重复元素，导致nums[nums[nums.lengt - 1]]可能与nums[0]相同，且有大量重复元素，这就导致mid可能落在first half arry 或者 second half array 且nums[mid] == nums[0]且无法判断是落在了哪半边</li>
+<li>解决办法是，在right &gt; left 的前提下 while(nums[right] == nums[left]) right &ndash;; 这样结尾元素与起始元素一定不同，进而可以使用leetcode 33的解题思路得到结果</li>
+<li>重复元素对于复杂度的影响在于，如果数组中全部都是相同元素，时间复杂度会退化到O(N)</li>
+</ul>
+<pre><code class="language-java">class Solution {
+    //worst case [1,1,1,1,1,1] time complexity O(1) || space complexity O(1)
+    public boolean search(int[] nums, int target) {
+        if(nums.length == 0)
+            return false;
+        
+        int left = 0;
+        int right = nums.length - 1;
+
+        while(nums[right] == nums[0] &amp;&amp; right &gt; left)
+            right --;
+
+        while(left &lt;= right){
+            int mid = left + (right - left) / 2;
+            if(nums[mid] == target)
+                return true;
+            else if(nums[mid] &gt;= nums[left]){
+                if( target &lt; nums[mid] &amp;&amp; target &gt;= nums[left])
+                    right = mid - 1;
+                else
+                    left = mid + 1;
+            }else{
+                if(target &gt; nums[mid] &amp;&amp; target &lt;= nums[right])
+                    left = mid + 1;
+                else
+                    right = mid - 1;
+            }
+        }
+
+        return false;
+    }
+}
 </code></pre>
 
     </div>
