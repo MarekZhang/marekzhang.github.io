@@ -39,7 +39,7 @@
 <meta itemprop="description" content="33.Search in Rotated Sorted Array You are given an integer array nums sorted in ascending order, and an integer target. Suppose that nums is rotated at some pivot unknown to you beforehand (i.e., [0,1,2,4,5,6,7] might become [4,5,6,7,0,1,2]). If target is found in the array return its index, otherwise, return -1. Example 1: Input: nums = [4,5,6,7,0,1,2], target = 0 Output: 4 Example 2: Input: nums = [4,5,6,7,0,1,2], target = 3">
 <meta itemprop="datePublished" content="2020-10-18T20:12:35&#43;01:00" />
 <meta itemprop="dateModified" content="2020-10-18T20:12:35&#43;01:00" />
-<meta itemprop="wordCount" content="1153">
+<meta itemprop="wordCount" content="1159">
 
 
 
@@ -156,7 +156,7 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://marekzhang.github.io/categories/algorithms/" class="category-list-link">algorithms</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://marekzhang.github.io/categories/algorithms/" class="category-list-link">algorithms</a><span class="category-list-count">7</span></li>
             <li class="category-list-item"><a href="https://marekzhang.github.io/categories/csapp/" class="category-list-link">csapp</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://marekzhang.github.io/categories/java/" class="category-list-link">java</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://marekzhang.github.io/categories/other/" class="category-list-link">other</a><span class="category-list-count">1</span></li>
@@ -172,7 +172,7 @@
             
             
             <li class="tag-list-item"><a href="https://marekzhang.github.io/tags/algorithm/" class="tag-list-link">algorithm</a><span
-                    class="tag-list-count">6</span></li>
+                    class="tag-list-count">7</span></li>
             
             
             <li class="tag-list-item"><a href="https://marekzhang.github.io/tags/bitwise/" class="tag-list-link">bitwise</a><span
@@ -238,6 +238,16 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="https://marekzhang.github.io/2020/10/lru/" class="title">LRU Cache</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-10-21 19:08:22 &#43;0100 IST" itemprop="datePublished">2020-10-21</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="https://marekzhang.github.io/2020/10/33.-search-in-rotated-sorted-array/" class="title">Leetcode 33. Search in Rotated Sorted Array</a>
                     </p>
                     <p class="item-date">
@@ -272,16 +282,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-10-04 21:43:50 &#43;0100 IST" itemprop="datePublished">2020-10-04</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://marekzhang.github.io/2020/10/bitwise/" class="title">Bitwise operations</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-10-01 11:47:14 &#43;0100 IST" itemprop="datePublished">2020-10-01</time>
                     </p>
                 </div>
             </li>
@@ -334,7 +334,7 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/10/33.-search-in-rotated-sorted-array/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1153words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1159words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
       </div>
     </div>
@@ -466,14 +466,14 @@ Would this affect the run-time complexity? How and why?</p>
 <ul>
 <li><a href="https://github.com/MarekZhang/Leetcode-My-Solutions/tree/master/33.%20Search%20in%20Rotated%20Sorted%20Array/src">33. Search in Rotated Sorted Array</a> follow up</li>
 <li>因为有重复元素，导致nums[nums[nums.lengt - 1]]可能与nums[0]相同，且有大量重复元素，这就导致mid可能落在first half arry 或者 second half array 且nums[mid] == nums[0]且无法判断是落在了哪半边</li>
-<li>解决办法是，在right &gt; left 的前提下 while(nums[right] == nums[left]) right &ndash;; 这样结尾元素与起始元素一定不同，进而可以使用leetcode 33的解题思路得到结果</li>
+<li>解决办法是，在right &gt; left 的前提下 <code>while(nums[right] == nums[left]) right--; </code> 这样结尾元素与起始元素一定不同，进而可以使用leetcode 33的解题思路得到结果</li>
 <li>重复元素对于复杂度的影响在于，如果数组中全部都是相同元素，时间复杂度会退化到O(N)</li>
 </ul>
 <pre><code class="language-java">class Solution {
     //worst case [1,1,1,1,1,1] time complexity O(1) || space complexity O(1)
     public boolean search(int[] nums, int target) {
         if(nums.length == 0)
-            return false;
+            return false;··
         
         int left = 0;
         int right = nums.length - 1;
@@ -544,6 +544,11 @@ Would this affect the run-time complexity? How and why?</p>
                 <a href="https://marekzhang.github.io/2020/10/datalab/" title="CSAPP Data Lab"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://marekzhang.github.io/2020/10/lru/"
+                    title="LRU Cache"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">

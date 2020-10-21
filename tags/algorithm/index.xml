@@ -5,10 +5,19 @@
     <link>https://marekzhang.github.io/tags/algorithm/</link>
     <description>Recent content in algorithm on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 18 Oct 2020 20:12:35 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2020 19:08:22 +0100</lastBuildDate>
     
         <atom:link href="https://marekzhang.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LRU Cache</title>
+      <link>https://marekzhang.github.io/2020/10/lru/</link>
+      <pubDate>Wed, 21 Oct 2020 19:08:22 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/10/lru/</guid>
+      <description>LRU(Least Recent Used) LRU是操作系统的一种cache algorithm 实际生产中也可能被应用到。想象一下公司业务要求对于频繁查询的信息(从DB中取值)存储在Hash Tab</description>
+    </item>
     
     <item>
       <title>Leetcode 33. Search in Rotated Sorted Array</title>
