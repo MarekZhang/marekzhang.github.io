@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <title>
-        Mark&#39;s Blog</title>
+        Leetcode 91. Decode Ways - Mark&#39;s Blog
+      </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -19,25 +20,32 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    
+    <meta name="description" content="leetcode 91. Decode Ways A message containing letters from A-Z is being encoded to numbers using the following mapping: &amp;lsquo;A&amp;rsquo; -&amp;gt; 1 &amp;lsquo;B&amp;rsquo; -&amp;gt; 2 &amp;hellip; &amp;lsquo;Z&amp;rsquo; -&amp;gt; 26 Given a non-empty string containing only digits, determine the total number of ways to decode it. The answer is guaranteed to fit in a 32-bit integer. Example 1: Input: s = &amp;ldquo;12&amp;rdquo; Output: 2 Explanation: It could be decoded as &amp;ldquo;AB&amp;rdquo;" />
     <meta name="generator" content="Hugo 0.73.0 with theme pure" />
-    <title>Mark&#39;s Blog</title>
+    <title>Leetcode 91. Decode Ways - Mark&#39;s Blog</title>
     
-    <link rel="alternate" type="application/rss+xml" href="https://marekzhang.github.io/tags/csapp/index.xml" title="Mark's Blog" />
     
     <link rel="stylesheet" href="https://marekzhang.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="csapp" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://marekzhang.github.io/tags/csapp/" />
-<meta property="og:updated_time" content="2020-10-06T13:58:04+01:00" />
-<meta itemprop="name" content="csapp">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="csapp"/>
-<meta name="twitter:description" content=""/>
+    <meta property="og:title" content="Leetcode 91. Decode Ways" />
+<meta property="og:description" content="leetcode 91. Decode Ways A message containing letters from A-Z is being encoded to numbers using the following mapping: &lsquo;A&rsquo; -&gt; 1 &lsquo;B&rsquo; -&gt; 2 &hellip; &lsquo;Z&rsquo; -&gt; 26 Given a non-empty string containing only digits, determine the total number of ways to decode it. The answer is guaranteed to fit in a 32-bit integer. Example 1: Input: s = &ldquo;12&rdquo; Output: 2 Explanation: It could be decoded as &ldquo;AB&rdquo;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marekzhang.github.io/2020/10/91.-decode-ways/" />
+<meta property="article:published_time" content="2020-10-22T21:40:39+01:00" />
+<meta property="article:modified_time" content="2020-10-22T21:40:39+01:00" />
+<meta itemprop="name" content="Leetcode 91. Decode Ways">
+<meta itemprop="description" content="leetcode 91. Decode Ways A message containing letters from A-Z is being encoded to numbers using the following mapping: &lsquo;A&rsquo; -&gt; 1 &lsquo;B&rsquo; -&gt; 2 &hellip; &lsquo;Z&rsquo; -&gt; 26 Given a non-empty string containing only digits, determine the total number of ways to decode it. The answer is guaranteed to fit in a 32-bit integer. Example 1: Input: s = &ldquo;12&rdquo; Output: 2 Explanation: It could be decoded as &ldquo;AB&rdquo;">
+<meta itemprop="datePublished" content="2020-10-22T21:40:39&#43;01:00" />
+<meta itemprop="dateModified" content="2020-10-22T21:40:39&#43;01:00" />
+<meta itemprop="wordCount" content="657">
+
+
+
+<meta itemprop="keywords" content="algorithm,Dynamic Programming," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Leetcode 91. Decode Ways"/>
+<meta name="twitter:description" content="leetcode 91. Decode Ways A message containing letters from A-Z is being encoded to numbers using the following mapping: &lsquo;A&rsquo; -&gt; 1 &lsquo;B&rsquo; -&gt; 2 &hellip; &lsquo;Z&rsquo; -&gt; 26 Given a non-empty string containing only digits, determine the total number of ways to decode it. The answer is guaranteed to fit in a 32-bit integer. Example 1: Input: s = &ldquo;12&rdquo; Output: 2 Explanation: It could be decoded as &ldquo;AB&rdquo;"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -289,66 +297,189 @@
 
     
     
-<main class="main" role="main">
-    <article class="content article article-tags post-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">csapp</h1>
-            <p class="text-muted hidden-xs">Total 15 tags</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://marekzhang.github.io/tags">All</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/algorithm/">algorithm</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/bitwise/">bitwise</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/csapp/">csapp</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/dynamic-programming/">Dynamic Programming</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/hugo/">Hugo</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/java/">Java</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/linkedlist/">LinkedList</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/pitfalls/">Pitfalls</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/queue/">Queue</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/reading-source-code/">Reading Source Code</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/redis/">Redis</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/spring-boot/">Spring Boot</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/stack/">Stack</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/string/">String</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/websocket/">WebSocket</a></li>
-                </ul>
-            </nav>
-        </header>
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/10/91.-decode-ways/"
+    >Leetcode 91. Decode Ways</a
+  >
+</h1>
+
+      <div class="article-meta">
         
-        <div class="article-body">
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-10-06 13:58:04 &#43;0100 IST"
-                itemprop="datePublished">2020-10-06</time>
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://marekzhang.github.io/2020/10/91.-decode-ways/" class="article-date">
+  <time datetime="2020-10-22 21:40:39 &#43;0100 IST" itemprop="datePublished">2020-10-22</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algorithms/"> Algorithms </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/algorithm/"> algorithm </a>
+    <a class="article-tag-link" href="/tags/dynamic-programming/"> Dynamic Programming </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/10/91.-decode-ways/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 657words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="leetcode-91-decode-ways">leetcode 91. Decode Ways</h2>
+<blockquote>
+<p>A message containing letters from A-Z is being encoded to numbers using the following mapping:</p>
+<p>&lsquo;A&rsquo; -&gt; 1</p>
+<p>&lsquo;B&rsquo; -&gt; 2</p>
+<p>&hellip;</p>
+<p>&lsquo;Z&rsquo; -&gt; 26
+Given a non-empty string containing only digits, determine the total number of ways to decode it.</p>
+<p>The answer is guaranteed to fit in a 32-bit integer.</p>
+<p>Example 1:</p>
+<p>Input: s = &ldquo;12&rdquo;
+Output: 2
+Explanation: It could be decoded as &ldquo;AB&rdquo; (1 2) or &ldquo;L&rdquo; (12).</p>
+<p>Example 2:</p>
+<p>Input: s = &ldquo;226&rdquo;
+Output: 3
+Explanation: It could be decoded as &ldquo;BZ&rdquo; (2 26), &ldquo;VF&rdquo; (22 6), or &ldquo;BBF&rdquo; (2 2 6).</p>
+<p>Example 3:</p>
+<p>Input: s = &ldquo;0&rdquo;</p>
+<p>Output: 0</p>
+<p>Explanation: There is no character that is mapped to a number starting with &lsquo;0&rsquo;. We cannot ignore a zero when we face it while decoding. So, each &lsquo;0&rsquo; should be part of &ldquo;10&rdquo; &ndash;&gt; &lsquo;J&rsquo; or &ldquo;20&rdquo; &ndash;&gt; &lsquo;T&rsquo;.</p>
+<p>Example 4:</p>
+<p>Input: s = &ldquo;1&rdquo;</p>
+<p>Output: 1</p>
+<p>Constraints:</p>
+<p>1 &lt;= s.length &lt;= 100</p>
+<p>s contains only digits and may contain leading zero(s).</p>
+</blockquote>
+<h3 id="solution">Solution</h3>
+<ul>
+<li>使用dynamic programming，考虑当前位的数字str.charAt(i)与i-1位的数字是否能够组成一个介于(10, 26]之间的数值，如果可以的话，当前位的结果应该是memo[i-1] + memo[i-2] (不是memo[i-1] + 1)</li>
+<li>由于可能需要取memo[i-2]的值，需要一个memo[0]的offset,且 i 对应的值为从1开始的序列值</li>
+<li>这道题的edge cases全部与0有关
+<ul>
+<li>“0123” 结果应该是0，所以对于memo[0]的取值要观察首位是否为0</li>
+<li>“2310” memo[4]的值应该等于memo[2]的值</li>
+<li>“2301” 结果应该是0，因为0不能mapping到任何字母上,30也不能</li>
+<li>&ldquo;23001&rdquo; 结果应该为0</li>
+</ul>
+</li>
+<li>所以我们应该以当前digit得到的数值是否为0，进而分别考虑memo[i]的取值</li>
+</ul>
+<pre><code class="language-java">class Solution {
+    //time complexity O(N) || space complexity O(N)
+    public int numDecodings(String s) {
+        int N = s.length();
+        if(s == null || N == 0)
+            return 0;
+        int[] memo = new int[N + 1];
+        // consider if the first character is zero
+        memo[0] = s.charAt(0) == '0' ? 0 : 1;
+        memo[1] = memo[0];
+        for(int i = 2; i &lt;= N; i++){
+            String digit1 = s.substring(i - 1, i);
+            //two digits number
+            String digit2 = s.substring(i - 2, i);
+            int val1 = Integer.valueOf(digit1);
+            int val2 = Integer.valueOf(digit2);
+            if(val1 != 0){
+                if(val2 &gt; 10 &amp;&amp; val2 &lt;=26)
+                    memo[i] = memo[i - 1] + memo[i - 2];
+                else
+                    memo[i] = memo[i - 1];
+            }else{
+                //the most significant bit cannot be zero; the value of two bit digits cannot be greater than 20
+                if(val2 &gt; 20 || val2 == 0)
+                    return 0;
+                else
+                    memo[i] = memo[i - 2];
+            }
+        }
+        
+        return memo[N];
+    }
+}
+</code></pre>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="https://marekzhang.github.io/2020/10/91.-decode-ways/" title="Leetcode 91. Decode Ways" target="_blank" rel="external">https://marekzhang.github.io/2020/10/91.-decode-ways/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/MarekZhang" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://marekzhang.github.io/shanyi.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/MarekZhang" target="_blank"><span class="text-dark">Mark Zhang</span><small class="ml-1x">Software Engineer</small></a></h3>
+        <div>Hi there ~</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://marekzhang.github.io/2020/10/lru/" title="LRU Cache"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="wechat,facebook,twitter"
+                data-mobile-sites="wechat,facebook,twitter"></div>
         </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://marekzhang.github.io/2020/10/datalab/">CSAPP Data Lab</a>
-        </h3>
     </div>
-    <div class="panel-footer">
-        <a href="https://marekzhang.github.io/tags/csapp" class="label label-default mb">csapp</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-10-06 13:58:04 &#43;0100 IST"
-                itemprop="datePublished">2020-10-06</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://marekzhang.github.io/2020/10/float-number/">IEEE 745 Floating-Point representation</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://marekzhang.github.io/tags/csapp" class="label label-default mb">csapp</a>
-    </div>
-</article>
-            </div>
-        </div>
-    </article>
+</nav>
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://www.facebook.com/mark.zhang.1650/" target="_blank" title="facebook" data-toggle=tooltip data-placement=top >
@@ -424,6 +555,7 @@
         hasInnerContainers: true,
     });
 </script>
+
 
   </body>
 </html>
