@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-        IEEE 745 Floating-Point representation - Mark&#39;s Blog
+        Leetcode 742. Closest Leaf in a Binary Tree - Mark&#39;s Blog
       </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -20,32 +20,32 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="IEEE 745 在IEEE745统一浮点数表示方法之前，不同的计算机采用了不同的浮点数表示方法。 Floating-Point representation The IEEE floating-point standard represents a number in a form $V = (−1)^s × M × 2^E$ 如图s为" />
+    <meta name="description" content="Leetcode 742. Closest Leaf in a Binary Tree solution 第一种方法考虑使用gragh和dfs,对每一个结点建立一个[currentNode, ParentNode, LeftNode, RightNode]的adjece" />
     <meta name="generator" content="Hugo 0.73.0 with theme pure" />
-    <title>IEEE 745 Floating-Point representation - Mark&#39;s Blog</title>
+    <title>Leetcode 742. Closest Leaf in a Binary Tree - Mark&#39;s Blog</title>
     
     
     <link rel="stylesheet" href="https://marekzhang.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="IEEE 745 Floating-Point representation" />
-<meta property="og:description" content="IEEE 745 在IEEE745统一浮点数表示方法之前，不同的计算机采用了不同的浮点数表示方法。 Floating-Point representation The IEEE floating-point standard represents a number in a form $V = (−1)^s × M × 2^E$ 如图s为" />
+    <meta property="og:title" content="Leetcode 742. Closest Leaf in a Binary Tree" />
+<meta property="og:description" content="Leetcode 742. Closest Leaf in a Binary Tree solution 第一种方法考虑使用gragh和dfs,对每一个结点建立一个[currentNode, ParentNode, LeftNode, RightNode]的adjece" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://marekzhang.github.io/2020/10/float-number/" />
-<meta property="article:published_time" content="2020-10-06T13:58:04+01:00" />
-<meta property="article:modified_time" content="2020-10-06T13:58:04+01:00" />
-<meta itemprop="name" content="IEEE 745 Floating-Point representation">
-<meta itemprop="description" content="IEEE 745 在IEEE745统一浮点数表示方法之前，不同的计算机采用了不同的浮点数表示方法。 Floating-Point representation The IEEE floating-point standard represents a number in a form $V = (−1)^s × M × 2^E$ 如图s为">
-<meta itemprop="datePublished" content="2020-10-06T13:58:04&#43;01:00" />
-<meta itemprop="dateModified" content="2020-10-06T13:58:04&#43;01:00" />
-<meta itemprop="wordCount" content="994">
+<meta property="og:url" content="https://marekzhang.github.io/2020/10/742/" />
+<meta property="article:published_time" content="2020-10-23T18:51:27+01:00" />
+<meta property="article:modified_time" content="2020-10-23T18:51:27+01:00" />
+<meta itemprop="name" content="Leetcode 742. Closest Leaf in a Binary Tree">
+<meta itemprop="description" content="Leetcode 742. Closest Leaf in a Binary Tree solution 第一种方法考虑使用gragh和dfs,对每一个结点建立一个[currentNode, ParentNode, LeftNode, RightNode]的adjece">
+<meta itemprop="datePublished" content="2020-10-23T18:51:27&#43;01:00" />
+<meta itemprop="dateModified" content="2020-10-23T18:51:27&#43;01:00" />
+<meta itemprop="wordCount" content="415">
 
 
 
-<meta itemprop="keywords" content="csapp," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="IEEE 745 Floating-Point representation"/>
-<meta name="twitter:description" content="IEEE 745 在IEEE745统一浮点数表示方法之前，不同的计算机采用了不同的浮点数表示方法。 Floating-Point representation The IEEE floating-point standard represents a number in a form $V = (−1)^s × M × 2^E$ 如图s为"/>
+<meta itemprop="keywords" content="algorithm,graph,bfs,dfs," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Leetcode 742. Closest Leaf in a Binary Tree"/>
+<meta name="twitter:description" content="Leetcode 742. Closest Leaf in a Binary Tree solution 第一种方法考虑使用gragh和dfs,对每一个结点建立一个[currentNode, ParentNode, LeftNode, RightNode]的adjece"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -325,8 +325,8 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/10/float-number/"
-    >IEEE 745 Floating-Point representation</a
+    href="/2020/10/742/"
+    >Leetcode 742. Closest Leaf in a Binary Tree</a
   >
 </h1>
 
@@ -334,68 +334,107 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://marekzhang.github.io/2020/10/float-number/" class="article-date">
-  <time datetime="2020-10-06 13:58:04 &#43;0100 IST" itemprop="datePublished">2020-10-06</time>
+<a href="https://marekzhang.github.io/2020/10/742/" class="article-date">
+  <time datetime="2020-10-23 18:51:27 &#43;0100 IST" itemprop="datePublished">2020-10-23</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/csapp/"> csapp </a>
+  <a class="article-category-link" href="/categories/algorithms/"> Algorithms </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/csapp/"> csapp </a>
+    <a class="article-tag-link" href="/tags/algorithm/"> algorithm </a>
+    <a class="article-tag-link" href="/tags/graph/"> graph </a>
+    <a class="article-tag-link" href="/tags/bfs/"> bfs </a>
+    <a class="article-tag-link" href="/tags/dfs/"> dfs </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/10/float-number/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/10/742/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 994words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 415words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h2 id="ieee-745">IEEE 745</h2>
-<blockquote>
-<p>在IEEE745统一浮点数表示方法之前，不同的计算机采用了不同的浮点数表示方法。</p>
-</blockquote>
-<h3 id="floating-point-representation">Floating-Point representation</h3>
+      <h2 id="leetcode-742-closest-leaf-in-a-binary-tree">Leetcode 742. Closest Leaf in a Binary Tree</h2>
+<p><img src="/images/leetcode742.png" alt="">
+<img src="/images/leetcode742-2.png" alt=""></p>
+<h3 id="solution">solution</h3>
 <ul>
-<li>The IEEE floating-point standard represents a number in a form $V = (−1)^s × M × 2^E$</li>
-<li>如图s为0或者1，作为符号位; exp用来计算E 位数为 1)8bit&ndash;32位浮点数 2)11bit&ndash;64位浮点数; frac用来计算M 位数为 1)23bit&ndash;32位浮点数 2)52bit&ndash;64位浮点数
-<img src="/images/IEEE.png" alt=""></li>
-<li>不同的binary bit形式能够表示三种浮点数：
-<ul>
-<li>Normailized (exp 部分不全为0 || 不全为1)
-<ul>
-<li>$E = e - bias$   e为exp部分表示的unsgined数的值，$bias=2^(k-1) - 1$ k为exp部分的位数(8&ndash;32位浮点数， 11&ndash;64位浮点数)</li>
-<li>$M = [1.f_{n-1}, f_{n-2}, f_{n-3}&hellip; f_0]$ fn-1, fn-2表示的是 frac 部分每一个bit上的值(0或者1) $f = f_{n-1} * 2^{-1} + f_{n-2} * 2^{-2} + &hellip; + f_0 * 2^{-n}$ and  $0 \leq f &lt; 1$</li>
+<li>第一种方法考虑使用gragh和dfs,对每一个结点建立一个[currentNode, ParentNode, LeftNode, RightNode]的adjecent matrix</li>
+<li>找到val=k的node，使用bfs的方法遍历与之相连的结点，找到第一个left==null &amp;&amp; right==null的结点即为我们想要的结果</li>
 </ul>
-</li>
-<li>Denormalized (exp 部分全为0)
-<ul>
-<li>$E = 1 - bias$</li>
-<li>$M = [0.f_{n-1}, f_{n-2}, f_{n-3}&hellip; f_0]$ 此时M没有leading 1 $0 \leq M &lt; 1$</li>
-<li>denormalized 可以表示0和非常接近0的小数(E为一个绝对值很大的负数)</li>
-</ul>
-</li>
-<li>Special Value (exp 部分全为1)
-<ul>
-<li>如果frac部分全为0，s为0表示$+ \infty$</li>
-<li>如果frac部分全为0，s为1表示$- \infty$</li>
-<li>如果frac部分不为0，则表示NAN “not a number” (除0)
-<img src="/images/IEEE2.png" alt=""></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="about-ieee-745">about IEEE 745</h3>
-<ul>
-<li>为什么用unsigned值来解码exp部分:这是为了浮点数大小比较的方便。使用unsigend值，如果符号位为0，只需要按位比较就可得到比较结果。如果用signed值表示exp部分的话，考虑exp使用4bit,这样的话1000代表-8，0111代表7，$2^{7} &gt; 2^{-8}$但是$0111 &lt; 1000$这样大小比较的时候就需要即考虑frac部分又考虑exp部分。即使s符号位为1使用unsgined解码exp部分，只需要将除符号位以外的bit大小比较的结果取反就可以了</li>
-<li>为什么使用bias: 因为使用了unsgined解码exp部分，需要将exp所取的unsgined值的区间做偏移，这样既可以表示一个小数点后位数很多的数(当E是一个绝对值很大的负数)，也可以表示一个绝对值很大的数(当E是一个很大的正数)</li>
-<li>为什么denormalized情况下$E = 1-bias$而不是$E = -bias$: 这是为了denormalized与normalized的边界点能够平滑过渡。denormalized跨到normalized的第一个值的exp部分一定是00..001,$E = e - bias = 1 - bias$</li>
-</ul>
-<p><img src="/images/IEEE3.png" alt=""></p>
+<pre><code class="language-java">/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    //create a graph, foe each node it has a list contains its adjacent nodes(每一个结点只记录与之相邻的结点，最多就3个，parent，left,right)
+    //since the value of node is unique, we take the value as the key
+    private Map&lt;Integer, List&lt;TreeNode&gt;&gt; graph = new HashMap&lt;&gt;();
+
+    public int findClosestLeaf(TreeNode root, int k) {
+        if(root == null)
+            return -1;
+        //dfs create graph
+        dfs(root, null);
+        //bfs find the nearest leaf node
+        LinkedList&lt;TreeNode&gt; queue = new LinkedList&lt;&gt;();
+        HashSet&lt;TreeNode&gt; memo = new HashSet&lt;&gt;();
+        //push node with value k into the queue
+        queue.addLast(graph.get(k).get(0));
+        while(!queue.isEmpty()){
+            TreeNode cur = queue.removeFirst();
+            if(memo.contains(cur))
+                continue;
+            memo.add(cur);
+            //[Node, parent, left, right] traverse from parent Node
+            for(int i = 0; i &lt; 4; i++){
+                TreeNode tempt = graph.get(cur.val).get(i);
+                if(tempt == null)
+                    continue;
+                else if(tempt.left == null &amp;&amp; tempt.right == null)
+                    return tempt.val;
+                else
+                    queue.addLast(tempt);
+            }
+        }
+
+        return -1;
+    }
+
+    private void dfs(TreeNode node, TreeNode parent){
+        int value = node.val;
+        if(!graph.containsKey(node.val))
+            graph.put(node.val, new ArrayList&lt;TreeNode&gt;());
+        List&lt;TreeNode&gt; matrix = graph.get(node.val);
+        //[Node, parent, leftNode, rightNode]
+        matrix.add(node);
+        matrix.add(parent);
+        matrix.add(node.left);
+        matrix.add(node.right);
+        if(node.left != null){
+            dfs(node.left, node);
+        }
+        if(node.right != null){
+            dfs(node.right, node);
+        }
+
+    }
+}
+</code></pre>
 
     </div>
     <div class="article-footer">
@@ -403,7 +442,7 @@
   <ul class="post-copyright list-unstyled">
     <li class="post-copyright-link hidden-xs">
       <strong>Permalink: </strong>
-      <a href="https://marekzhang.github.io/2020/10/float-number/" title="IEEE 745 Floating-Point representation" target="_blank" rel="external">https://marekzhang.github.io/2020/10/float-number/</a>
+      <a href="https://marekzhang.github.io/2020/10/742/" title="Leetcode 742. Closest Leaf in a Binary Tree" target="_blank" rel="external">https://marekzhang.github.io/2020/10/742/</a>
     </li>
     <li class="post-copyright-license">
       <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
@@ -435,14 +474,9 @@
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://marekzhang.github.io/2020/10/stackandqueue/" title="Stacks and Queues"><i
+                <a href="https://marekzhang.github.io/2020/10/91.-decode-ways/" title="Leetcode 91. Decode Ways"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
-            </li>
-            <li class="next">
-                <a href="https://marekzhang.github.io/2020/10/datalab/"
-                    title="CSAPP Data Lab"><span>Newer&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">

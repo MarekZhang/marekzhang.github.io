@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Leetcode 742. Closest Leaf in a Binary Tree</title>
+      <link>https://marekzhang.github.io/2020/10/742/</link>
+      <pubDate>Fri, 23 Oct 2020 18:51:27 +0100</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/10/742/</guid>
+      <description>Leetcode 742. Closest Leaf in a Binary Tree solution 第一种方法考虑使用gragh和dfs,对每一个结点建立一个[currentNode, ParentNode, LeftNode, RightNode]的adjece</description>
+    </item>
+    
+    <item>
       <title>Leetcode 91. Decode Ways</title>
       <link>https://marekzhang.github.io/2020/10/91.-decode-ways/</link>
       <pubDate>Thu, 22 Oct 2020 21:40:39 +0100</pubDate>
