@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <title>
-        Mark&#39;s Blog</title>
+        Topological sort - Mark&#39;s Blog
+      </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -19,25 +20,32 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    
+    <meta name="description" content="Topological Sort Topological Sort 是directed graph中解决precedence-constrained-scheduling 问题比较经典的算法。算法核心在于" />
     <meta name="generator" content="Hugo 0.73.0 with theme pure" />
-    <title>Mark&#39;s Blog</title>
+    <title>Topological sort - Mark&#39;s Blog</title>
     
-    <link rel="alternate" type="application/rss+xml" href="https://marekzhang.github.io/tags/csapp/index.xml" title="Mark's Blog" />
     
     <link rel="stylesheet" href="https://marekzhang.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="csapp" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://marekzhang.github.io/tags/csapp/" />
-<meta property="og:updated_time" content="2020-10-06T13:58:04+01:00" />
-<meta itemprop="name" content="csapp">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="csapp"/>
-<meta name="twitter:description" content=""/>
+    <meta property="og:title" content="Topological sort" />
+<meta property="og:description" content="Topological Sort Topological Sort 是directed graph中解决precedence-constrained-scheduling 问题比较经典的算法。算法核心在于" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marekzhang.github.io/2020/11/topological-sort/" />
+<meta property="article:published_time" content="2020-11-06T22:47:52+00:00" />
+<meta property="article:modified_time" content="2020-11-06T22:47:52+00:00" />
+<meta itemprop="name" content="Topological sort">
+<meta itemprop="description" content="Topological Sort Topological Sort 是directed graph中解决precedence-constrained-scheduling 问题比较经典的算法。算法核心在于">
+<meta itemprop="datePublished" content="2020-11-06T22:47:52&#43;00:00" />
+<meta itemprop="dateModified" content="2020-11-06T22:47:52&#43;00:00" />
+<meta itemprop="wordCount" content="470">
+
+
+
+<meta itemprop="keywords" content="algorithm,Graph," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Topological sort"/>
+<meta name="twitter:description" content="Topological Sort Topological Sort 是directed graph中解决precedence-constrained-scheduling 问题比较经典的算法。算法核心在于"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -305,70 +313,206 @@
 
     
     
-<main class="main" role="main">
-    <article class="content article article-tags post-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">csapp</h1>
-            <p class="text-muted hidden-xs">Total 19 tags</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://marekzhang.github.io/tags">All</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/algorithm/">algorithm</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/bfs/">bfs</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/bitwise/">bitwise</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/csapp/">csapp</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/dfs/">dfs</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/dynamic-programming/">Dynamic Programming</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/graph/">Graph</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/hugo/">Hugo</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/java/">Java</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/linkedlist/">LinkedList</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/pitfalls/">Pitfalls</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/queue/">Queue</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/reading-source-code/">Reading Source Code</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/redis/">Redis</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/spring-boot/">Spring Boot</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/stack/">Stack</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/string/">String</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/union-find/">Union Find</a></li>
-                    <li><a href="https://marekzhang.github.io/tags/websocket/">WebSocket</a></li>
-                </ul>
-            </nav>
-        </header>
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/11/topological-sort/"
+    >Topological sort</a
+  >
+</h1>
+
+      <div class="article-meta">
         
-        <div class="article-body">
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-10-06 13:58:04 &#43;0100 IST"
-                itemprop="datePublished">2020-10-06</time>
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://marekzhang.github.io/2020/11/topological-sort/" class="article-date">
+  <time datetime="2020-11-06 22:47:52 &#43;0000 UTC" itemprop="datePublished">2020-11-06</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algorithms/"> Algorithms </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/algorithm/"> algorithm </a>
+    <a class="article-tag-link" href="/tags/graph/"> Graph </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/11/topological-sort/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 470words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="topological-sort">Topological Sort</h2>
+<ul>
+<li>Topological Sort 是directed graph中解决precedence-constrained-scheduling 问题比较经典的算法。算法核心在于能否找到<!-- raw HTML omitted -->Directed-cycle<!-- raw HTML omitted --></li>
+<li>A directed acyclic graph (DAG) is a digraph with no directed cycles.</li>
+<li>比如大学选课系统，一些course需要prerequisite for certain other courses</li>
+</ul>
+<blockquote>
+<p>Precedence-constrained scheduling:
+Given a set of jobs to be completed, with precedence constraints that specify that certain jobs have to be completed before certain other jobs are begun, how can we schedule the jobs such that they are all completed while still respecting the constraints?
+<img src="/images/prerequisite.png" alt=""></p>
+</blockquote>
+<pre><code class="language-java">public class DirectedCycle
+  {
+     private boolean[] marked;
+     private int[] edgeTo;
+     private Stack&lt;Integer&gt; cycle;
+     private boolean[] onStack;
+     public DirectedCycle(Digraph G)
+     {
+        onStack = new boolean[G.V()];
+        edgeTo = new int[G.V()]; 
+        marked = new boolean[G.V()]; 
+        for (int v = 0; v &lt; G.V(); v++)
+            if (!marked[v]) dfs(G, v);
+     }
+     private void dfs(Digraph G, int v){
+        onStack[v] = true;
+        marked[v] = true;
+        for (int w : G.adj(v))
+        if (this.hasCycle()) return;
+        else if (!marked[w]){// only when the vertex has not been visited  
+            edgeTo[w] = v; dfs(G, w);  
+        }else if (onStack[w]){
+            cycle = new Stack&lt;Integer&gt;();
+            for (int x = v; x != w; x = edgeTo[x])
+                cycle.push(x); 
+            cycle.push(w); 
+            cycle.push(v);
+        }
+        onStack[v] = false;
+    }
+     public boolean hasCycle(){  
+         return cycle != null;  
+    }
+     public Iterable&lt;Integer&gt; cycle(){
+        return cycle;  
+    }
+}
+</code></pre>
+<ul>
+<li>!marked[w] 才会进行dfs的原因是，如果之前的dfs已经访问过当前vertex了，并且存在cycle的话，那么就已经找到cycle了
+<img src="/images/directedCycle.png" alt=""></li>
+</ul>
+<h3 id="leetcode-207-course-schedule">Leetcode 207. Course Schedule</h3>
+<p><img src="/images/leetcode207.png" alt=""></p>
+<pre><code class="language-java">class Solution {
+    private boolean[] marked;
+    private boolean[] stack;
+    private Map&lt;Integer, List&lt;Integer&gt;&gt; graph = new HashMap&lt;&gt;();
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        marked = new boolean[numCourses];
+        stack = new boolean[numCourses];
+        for(int i = 0; i &lt; prerequisites.length; i++){
+            int pre = prerequisites[i][0];
+            int nex = prerequisites[i][1];
+            graph.computeIfAbsent(pre, (set) -&gt; new ArrayList&lt;&gt;());
+            graph.get(pre).add(nex);
+        }
+        
+        for(int key : graph.keySet()){
+            if(findDirectedCycle(key, graph.get(key)))
+                return false;
+        }
+        
+        return true;
+    }
+    
+    private boolean findDirectedCycle(int w, List&lt;Integer&gt; vertexes){
+        if(marked[w]) return false;
+        if(stack[w]) return true;
+        
+        stack[w] = true;
+        for(int vertex : vertexes){
+            if(graph.containsKey(vertex) &amp;&amp; findDirectedCycle(vertex, graph.get(vertex)))
+                return true;
+        }
+        marked[w] = true;
+        stack[w] = false;
+        
+        return false;
+    }
+}
+</code></pre>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="https://marekzhang.github.io/2020/11/topological-sort/" title="Topological sort" target="_blank" rel="external">https://marekzhang.github.io/2020/11/topological-sort/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/MarekZhang" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://marekzhang.github.io/shanyi.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/MarekZhang" target="_blank"><span class="text-dark">Mark Zhang</span><small class="ml-1x">Software Engineer</small></a></h3>
+        <div>Hi there ~</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://marekzhang.github.io/2020/11/1202.-smallest-string-with-swaps/" title="Leetcode 1202. Smallest String With Swaps"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="wechat,facebook,twitter"
+                data-mobile-sites="wechat,facebook,twitter"></div>
         </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://marekzhang.github.io/2020/10/datalab/">CSAPP Data Lab</a>
-        </h3>
     </div>
-    <div class="panel-footer">
-        <a href="https://marekzhang.github.io/tags/csapp" class="label label-default mb">csapp</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-10-06 13:58:04 &#43;0100 IST"
-                itemprop="datePublished">2020-10-06</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://marekzhang.github.io/2020/10/float-number/">IEEE 745 Floating-Point representation</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://marekzhang.github.io/tags/csapp" class="label label-default mb">csapp</a>
-    </div>
-</article>
-            </div>
-        </div>
-    </article>
+</nav>
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://www.facebook.com/mark.zhang.1650/" target="_blank" title="facebook" data-toggle=tooltip data-placement=top >
@@ -444,6 +588,7 @@
         hasInnerContainers: true,
     });
 </script>
+
 
   </body>
 </html>
