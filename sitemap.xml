@@ -3,6 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marekzhang.github.io/categories/</loc>
+    <lastmod>2020-11-17T12:16:34+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/tags/csapp/</loc>
+    <lastmod>2020-11-17T12:16:34+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/categories/csapp/</loc>
+    <lastmod>2020-11-17T12:16:34+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/2020/11/csapp-bomb-lab/</loc>
+    <lastmod>2020-11-17T12:16:34+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/</loc>
+    <lastmod>2020-11-17T12:16:34+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/posts/</loc>
+    <lastmod>2020-11-17T12:16:34+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://marekzhang.github.io/tags/</loc>
+    <lastmod>2020-11-17T12:16:34+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://marekzhang.github.io/tags/algorithm/</loc>
     <lastmod>2020-11-06T22:47:52+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -17,35 +66,7 @@
   </url>
   
   <url>
-    <loc>https://marekzhang.github.io/categories/</loc>
-    <lastmod>2020-11-06T22:47:52+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://marekzhang.github.io/tags/graph/</loc>
-    <lastmod>2020-11-06T22:47:52+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/</loc>
-    <lastmod>2020-11-06T22:47:52+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/posts/</loc>
-    <lastmod>2020-11-06T22:47:52+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/tags/</loc>
     <lastmod>2020-11-06T22:47:52+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -124,20 +145,6 @@
   <url>
     <loc>https://marekzhang.github.io/tags/linkedlist/</loc>
     <lastmod>2020-10-18T20:12:35+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/tags/csapp/</loc>
-    <lastmod>2020-10-06T13:58:04+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://marekzhang.github.io/categories/csapp/</loc>
-    <lastmod>2020-10-06T13:58:04+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

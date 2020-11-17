@@ -5,10 +5,19 @@
     <link>https://marekzhang.github.io/</link>
     <description>Recent content on Mark&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 22:47:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2020 12:16:34 +0000</lastBuildDate>
     
         <atom:link href="https://marekzhang.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSAPP Bomb Lab</title>
+      <link>https://marekzhang.github.io/2020/11/csapp-bomb-lab/</link>
+      <pubDate>Tue, 17 Nov 2020 12:16:34 +0000</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/11/csapp-bomb-lab/</guid>
+      <description>Description csapp bomb lab. We are given an object file named bomb. We have six bombs to defuse. command objdump objdump -d bomb &amp;gt; bomb.dump readelf -x .rodata bomb 可以查看object file中的data segment，包含所有的static va</description>
+    </item>
     
     <item>
       <title>Topological sort</title>
