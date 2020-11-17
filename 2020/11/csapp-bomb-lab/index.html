@@ -39,7 +39,7 @@
 <meta itemprop="description" content="Description csapp bomb lab. We are given an object file named bomb. We have six bombs to defuse. command objdump objdump -d bomb &gt; bomb.dump readelf -x .rodata bomb 可以查看object file中的data segment，包含所有的static va">
 <meta itemprop="datePublished" content="2020-11-17T12:16:34&#43;00:00" />
 <meta itemprop="dateModified" content="2020-11-17T12:16:34&#43;00:00" />
-<meta itemprop="wordCount" content="657">
+<meta itemprop="wordCount" content="655">
 
 
 
@@ -353,7 +353,7 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/11/csapp-bomb-lab/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 657words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 655words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
       </div>
     </div>
@@ -395,10 +395,14 @@
 <li>objdump -d bomb &gt; bomb.dump 得到object file的汇编码</li>
 <li>gdb 模式下layout split 对照bomb.c源码找到phase_1函数的地址为0x400ee0; 并且read_line函数从控制台读取到user输入的字符串存储到了%rax中，调用phase_1(input)之前，mov %rax %rdi, 将输入字符串作为phase_1的参数</li>
 </ol>
-<p><img src="/images/phase_1_address.png" alt="">
-4. bomb.dump 中找到phase_1函数对应的assembly code, mov $0x402400 %esi, 将起始地址为0x402400的char*[]起始地址作为第二个参数，然后callq &lt;strings_not_equal&gt;,比较第一个参数(用户输入值存储在%rdi中)和第二个参数(程序中static data 0x402400)是否相等</p>
-<p><img src="/images/phase_1_assembly.png" alt="">
-5. readelf -x .rodata bomb找到0x402400字符串, 00000000 代表字符串结束符&rsquo;\0&rsquo;,查找ascii表2e对应&rsquo;.';所以phase_1答案为:<!-- raw HTML omitted -->Border relations with Canada have never been better.<!-- raw HTML omitted --></p>
+<p><img src="/images/phase_1_address.png" alt=""></p>
+<ol start="4">
+<li>bomb.dump 中找到phase_1函数对应的assembly code, mov $0x402400 %esi, 将起始地址为0x402400的char*[]起始地址作为第二个参数，然后callq &lt;strings_not_equal&gt;,比较第一个参数(用户输入值存储在%rdi中)和第二个参数(程序中static data 0x402400)是否相等</li>
+</ol>
+<p><img src="/images/phase_1_assembly.png" alt=""></p>
+<ol start="5">
+<li>readelf -x .rodata bomb找到0x402400字符串, 00000000 代表字符串结束符&rsquo;\0&rsquo;,查找ascii表2e对应&rsquo;.';所以phase_1答案为:<!-- raw HTML omitted -->Border relations with Canada have never been better.<!-- raw HTML omitted --></li>
+</ol>
 <p><img src="/images/phase_1_answer.png" alt=""></p>
 
     </div>
