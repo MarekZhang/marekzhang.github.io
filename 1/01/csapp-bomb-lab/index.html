@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-        CSAPP Bomb Lab - Mark&#39;s Blog
+         - Mark&#39;s Blog
       </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -20,32 +20,30 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="Description csapp bomb lab. We are given an object file named bomb. We have six bombs to defuse. command objdump objdump -d bomb &amp;gt; bomb.dump readelf -x .rodata bomb 可以查看object file中的data segment，包含所有的static va" />
+    <meta name="description" content="This is an x86-64 bomb for self-study students. command objdump objdump -d bomb &amp;gt; bomb.dump readelf -x .rodata bomb 可以查看object file中的data segment，包含所有的static variables及其地" />
     <meta name="generator" content="Hugo 0.73.0 with theme pure" />
-    <title>CSAPP Bomb Lab - Mark&#39;s Blog</title>
+    <title> - Mark&#39;s Blog</title>
     
     
     <link rel="stylesheet" href="https://marekzhang.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="CSAPP Bomb Lab" />
-<meta property="og:description" content="Description csapp bomb lab. We are given an object file named bomb. We have six bombs to defuse. command objdump objdump -d bomb &gt; bomb.dump readelf -x .rodata bomb 可以查看object file中的data segment，包含所有的static va" />
+    <meta property="og:title" content="" />
+<meta property="og:description" content="This is an x86-64 bomb for self-study students. command objdump objdump -d bomb &gt; bomb.dump readelf -x .rodata bomb 可以查看object file中的data segment，包含所有的static variables及其地" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://marekzhang.github.io/2020/11/csapp-bomb-lab/" />
-<meta property="article:published_time" content="2020-11-17T12:16:34+00:00" />
-<meta property="article:modified_time" content="2020-11-17T12:16:34+00:00" />
-<meta itemprop="name" content="CSAPP Bomb Lab">
-<meta itemprop="description" content="Description csapp bomb lab. We are given an object file named bomb. We have six bombs to defuse. command objdump objdump -d bomb &gt; bomb.dump readelf -x .rodata bomb 可以查看object file中的data segment，包含所有的static va">
-<meta itemprop="datePublished" content="2020-11-17T12:16:34&#43;00:00" />
-<meta itemprop="dateModified" content="2020-11-17T12:16:34&#43;00:00" />
-<meta itemprop="wordCount" content="2775">
+<meta property="og:url" content="https://marekzhang.github.io/1/01/csapp-bomb-lab/" />
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="This is an x86-64 bomb for self-study students. command objdump objdump -d bomb &gt; bomb.dump readelf -x .rodata bomb 可以查看object file中的data segment，包含所有的static variables及其地">
+
+<meta itemprop="wordCount" content="2766">
 
 
 
-<meta itemprop="keywords" content="csapp," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CSAPP Bomb Lab"/>
-<meta name="twitter:description" content="Description csapp bomb lab. We are given an object file named bomb. We have six bombs to defuse. command objdump objdump -d bomb &gt; bomb.dump readelf -x .rodata bomb 可以查看object file中的data segment，包含所有的static va"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="This is an x86-64 bomb for self-study students. command objdump objdump -d bomb &gt; bomb.dump readelf -x .rodata bomb 可以查看object file中的data segment，包含所有的static variables及其地"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -157,7 +155,7 @@
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://marekzhang.github.io/categories/algorithms/" class="category-list-link">algorithms</a><span class="category-list-count">11</span></li>
-            <li class="category-list-item"><a href="https://marekzhang.github.io/categories/csapp/" class="category-list-link">csapp</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://marekzhang.github.io/categories/csapp/" class="category-list-link">csapp</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://marekzhang.github.io/categories/java/" class="category-list-link">java</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://marekzhang.github.io/categories/other/" class="category-list-link">other</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://marekzhang.github.io/categories/redis/" class="category-list-link">redis</a><span class="category-list-count">1</span></li>
@@ -184,7 +182,7 @@
             
             
             <li class="tag-list-item"><a href="https://marekzhang.github.io/tags/csapp/" class="tag-list-link">csapp</a><span
-                    class="tag-list-count">3</span></li>
+                    class="tag-list-count">2</span></li>
             
             
             <li class="tag-list-item"><a href="https://marekzhang.github.io/tags/dfs/" class="tag-list-link">dfs</a><span
@@ -258,16 +256,6 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://marekzhang.github.io/2020/11/csapp-bomb-lab/" class="title">CSAPP Bomb Lab</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-11-17 12:16:34 &#43;0000 UTC" itemprop="datePublished">2020-11-17</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
                         <a href="https://marekzhang.github.io/2020/11/topological-sort/" class="title">Topological sort</a>
                     </p>
                     <p class="item-date">
@@ -305,6 +293,16 @@
                     </p>
                 </div>
             </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://marekzhang.github.io/2020/10/lru/" class="title">LRU Cache</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-10-21 19:08:22 &#43;0100 IST" itemprop="datePublished">2020-10-21</time>
+                    </p>
+                </div>
+            </li>
         </ul>
     </div>
 </div>
@@ -329,37 +327,22 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/11/csapp-bomb-lab/"
-    >CSAPP Bomb Lab</a
+    href="/1/01/csapp-bomb-lab/"
+    ></a
   >
 </h1>
 
       <div class="article-meta">
         
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://marekzhang.github.io/2020/11/csapp-bomb-lab/" class="article-date">
-  <time datetime="2020-11-17 12:16:34 &#43;0000 UTC" itemprop="datePublished">2020-11-17</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/csapp/"> csapp </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/csapp/"> csapp </a>
-  </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/11/csapp-bomb-lab/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/1/01/csapp-bomb-lab/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2775words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2766words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 6minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h2 id="description">Description</h2>
-<p>csapp bomb lab. We are given an object file named bomb. We have six bombs to defuse.</p>
+      <p>This is an x86-64 bomb for self-study students.</p>
 <h2 id="command">command</h2>
 <ul>
 <li>objdump</li>
@@ -525,7 +508,8 @@ read_six_numbers:
 <li>func4的小trick是400fe2: cmp  %edi,%ecx，其中edi为我们输入的第一个数字，只有edi &lt;= ecx才会跳转400ff2, 而400ff2 将return value %eax置0，之后  400ff7: cmp %edi,%ecx 400ff9: jge 401007 再次比较edi和ecx的值 并且需要 %edi &gt;= ecx才return 0，而return 0在phase_4中40104d中满足不引爆炸弹的必要条件，所以我们输入的数值只要与ecx通过 400fce~400fdf得到的结果相同就可以，而这个值为0xe &raquo; 1 = 0x7</li>
 <li>第二个值很简单401051行与0做比较，所以输入的两个值为 0x7 和 0x0</li>
 </ol>
-<pre><code>phase_4:000000000040100c &lt;phase_4&gt;:
+<pre><code>phase_4:
+000000000040100c &lt;phase_4&gt;:
   40100c:       48 83 ec 18             sub    $0x18,%rsp
   401010:       48 8d 4c 24 0c          lea    0xc(%rsp),%rcx
   401015:       48 8d 54 24 08          lea    0x8(%rsp),%rdx
@@ -580,7 +564,7 @@ read_six_numbers:
   <ul class="post-copyright list-unstyled">
     <li class="post-copyright-link hidden-xs">
       <strong>Permalink: </strong>
-      <a href="https://marekzhang.github.io/2020/11/csapp-bomb-lab/" title="CSAPP Bomb Lab" target="_blank" rel="external">https://marekzhang.github.io/2020/11/csapp-bomb-lab/</a>
+      <a href="https://marekzhang.github.io/1/01/csapp-bomb-lab/" title="" target="_blank" rel="external">https://marekzhang.github.io/1/01/csapp-bomb-lab/</a>
     </li>
     <li class="post-copyright-license">
       <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
@@ -611,10 +595,10 @@ read_six_numbers:
 </div><nav class="bar bar-footer clearfix" data-stick-bottom>
     <div class="bar-inner">
         <ul class="pager pull-left">
-            <li class="prev">
-                <a href="https://marekzhang.github.io/2020/11/topological-sort/" title="Topological sort"><i
-                        class="icon icon-angle-left"
-                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            <li class="next">
+                <a href="https://marekzhang.github.io/about/"
+                    title="About"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
