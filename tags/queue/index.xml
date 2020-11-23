@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>CSAPP Attack Lab</title>
+      <link>https://marekzhang.github.io/2020/11/attack-lab/</link>
+      <pubDate>Tue, 17 Nov 2020 12:16:34 +0000</pubDate>
+      
+      <guid>https://marekzhang.github.io/2020/11/attack-lab/</guid>
+      <description>Description 分为两种attack: 1)Code Injection Attacks 2)Return-Oriented Programming 由于executable program的执行逻辑是要上传到CMU评分系统，我们自己本地做的时候要在comm</description>
+    </item>
+    
+    <item>
       <title>CSAPP Bomb Lab</title>
       <link>https://marekzhang.github.io/2020/11/csapp-bomb-lab/</link>
       <pubDate>Tue, 17 Nov 2020 12:16:34 +0000</pubDate>
@@ -180,17 +189,6 @@ baseURL: https://xxxx.github.io/  </description>
       
       <guid>https://marekzhang.github.io/2020/09/redis-distributed-lock/</guid>
       <description>Description 对于High Concurrency 的场景通常要考虑线程抢夺资源的问题。比如电商SecKill活动通常容易出现的超卖现象。比如下面这段代码当有多个线程共享了库存</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://marekzhang.github.io/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://marekzhang.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.</description>
     </item>
     
   </channel>

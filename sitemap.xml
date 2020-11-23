@@ -24,6 +24,13 @@
   </url>
   
   <url>
+    <loc>https://marekzhang.github.io/2020/11/attack-lab/</loc>
+    <lastmod>2020-11-17T12:16:34+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://marekzhang.github.io/2020/11/csapp-bomb-lab/</loc>
     <lastmod>2020-11-17T12:16:34+00:00</lastmod>
     <changefreq>monthly</changefreq>
